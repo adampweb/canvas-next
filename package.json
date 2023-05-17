@@ -13,7 +13,7 @@
     "@fingerprintjs/fingerprintjs": "^3.3.6",
     "@heroicons/react": "^2.0.13",
     "@types/clientjs": "^0.2.0",
-    "@types/node": "18.11.9",
+    "@types/node": "18.15.13",
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.9",
     "clsx": "^1.2.1",
