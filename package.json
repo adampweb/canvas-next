@@ -14,7 +14,7 @@
     "@heroicons/react": "^2.0.13",
     "@types/clientjs": "^0.2.0",
     "@types/node": "18.11.9",
-    "@types/react": "18.0.25",
+    "@types/react": "18.0.38",
     "@types/react-dom": "18.0.9",
     "clsx": "^1.2.1",
     "eslint": "^8.44.0",
