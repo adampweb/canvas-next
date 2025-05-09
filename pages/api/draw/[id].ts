@@ -28,9 +28,10 @@ export default async function handler(
     console.log("creating new socket io server");
     const httpServer: HttpServer = res.socket.server as any;
     const io = new SocketIOServer(httpServer);
-
-    if (req.query.id) {
-      const mainSpace = io.of(req.query.id.toString());
+    const id = req.query.id;
+    
+    if (typeof id === "string" && /^[\w-]{1,64}$/.test(id)) {
+      const mainSpace = io.of(id);
 
       mainSpace.on("connection", (socket) => {
         socket.broadcast.emit("total", ids);
